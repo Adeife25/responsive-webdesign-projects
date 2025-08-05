@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Form for Supporters of My Tech Journey</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Survey Form for Supporters of My Tech Journey</h1>
+        <p>Please fill out this form with the required information</p>
+    <form method="POST" action="/submit-survey">
+        <fieldset>
+        <label for="name">Name <input text="type" name="fullname" placeholder="fullname" id="name" required/></label>
+        <label for="email">Email <input text="type" id="email" name="email" placeholder="email" required minlength="8"/></label>
+        <label for="age">Age(optional) <input type="text" id="age" name="age" placeholder="age" /></label>
+        <label for="new-password">Create a password (just for fun 😄) <input type="password" id="new-password" name="password" pattern="[a-z0-5]{8,}" required/></label>
+    </fieldset>
+    <fieldset>
+        <legend>Tech Experience Level </legend>
+        <label for="beginner-level">Beginner<input id="beginner-level" type="radio" name="level-type" class="inline" checked/></label>
+        <label for="intermediate-level">Intermediate<input id="intermediate-level" type="radio" name="level-type" class="inline" checked/></label>
+        <label for="advanced-level">Advanced<input id="advanced-level" type="radio" name="level-type" class="inline" checked/></label>
+    </fieldset>
+    <fieldset>
+       <label for="role">Who are you to me?
+        <select id="role" name="role" >
+            <option value="">(Select one)</option>
+            <option value="1">Friend</option>
+            <option value="2">Family</option>
+            <option value="3">Follower</option> 
+            <option value="4">Just stumbled on this!</option> 
+        </select>
+       </label>
+       <label for="comments">Why Are You Following My Journey?
+        <textarea id="comments" name="comments" placeholder="Your comments here..." rows="3" cols="30"></textarea>
+    </fieldset>
+    <label for="terms-and-conditions">
+        <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline"/>I accept the <a href="https://www.freecodecamp.org/news/terms-of-service"> terms and conditions </a>
+    </label>
+    <input type="submit" value="Submit" />
+</form>
+</body>
+</html>

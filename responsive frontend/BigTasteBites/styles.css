@@ -1,0 +1,61 @@
+body {background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 190vh;
+  margin: 0;
+  padding: 5px;
+    background-image: url(chinchin-removebg-preview.png);
+font-family: sans-serif;
+h1, h2{font-family: Impact;}
+}
+h1{margin-bottom: 18px;
+  margin-top: 0px;
+  font-size: 40px;}
+h2{font-size: 30px;}
+.menu{ font-size: 20px;
+    font-family: Impact, sans-serif;}
+h1, p {
+  text-align: center;
+}
+h2{text-align: left;}
+.section-header{text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-top: 2%;
+}
+.menu { margin-left: auto;
+     margin-right: auto;
+  width: 80%;
+  max-width: 500px;
+  background-color: burlywood;
+}
+.snack-list, .price , .drink-list { margin-left: auto;
+     margin-right: auto;
+  width: 80%;
+  background-color: burlywood;
+}
+.bottom-line{margin-top: 25px;}
+.item{ font-size: 18px;
+   margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+padding-left: 5px;
+padding-right: 5%;}
+.snack-list, .drink-list{text-align: left;
+width: 70%;}
+.price{text-align: right;
+width: 25%;}
+hr{border-color: burlywood;
+    background-color: burlywood;
+    height: 4px;}
+    /*FOOTER*/
+  a{color: black;}
+  a:hover{color: brown;}
+a:visited{color: black;}
+a:active{color: brown;}
+.contact{margin-bottom: 15px;}
+img{margin-top: -12px;
+  display: block;
+margin-left: auto;
+margin-right: auto;}
